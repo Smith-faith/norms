@@ -5,11 +5,17 @@ Vue.use(Vuex)
 
 export default new Vuex.Store({
   state: {
-  },
-  mutations: {
+    userMail: '',
+   },
+   
+   getters : {
+     getterMail: state => state.userMail,
+ },
+
+ mutations:{
+    mutateEmail: (state, userMail) => state.userMail = userMail
   },
   actions: {
-  },
-  modules: {
+
   }
 })
